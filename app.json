@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/release/release"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#FF4081",
+    "navigationBarTitleText": "信院表白墙",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#38f",
+    "list": [{
+      "pagePath": "pages/index/index",
+       "text":"表白"
+    },
+    {
+      "pagePath":"pages/user/user",
+      "text":"个人"
+    }]
+  }
+}

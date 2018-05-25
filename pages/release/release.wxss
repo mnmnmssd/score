@@ -1,0 +1,10 @@
+.container{
+  width: 95%;
+  /* height: 80%; */
+  margin: 0 auto;
+}
+.love-title{
+  margin-top: 25rpx;
+  margin-bottom: 20rpx;
+  border-bottom: 1px solid #F48FB1;
+}

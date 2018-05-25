@@ -1,0 +1,22 @@
+.container{
+  width: 90%;
+  min-height: 200rpx;
+  background-color: #F8BBD0;
+  margin: 0 auto;
+  margin-bottom: 50rpx;
+  padding-top: 25rpx;
+  padding-bottom: 25rpx;
+}
+.titles{
+  font-size: 26px;
+  margin-left: 50rpx;
+  border-bottom: 1px solid #ebebeb;
+}
+.potss{
+  width: 90%;
+  margin: 25rpx auto;
+  word-break: break-all;
+}
+.potss text{
+  font-size: 16px;
+}

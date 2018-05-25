@@ -1,0 +1,43 @@
+@import "post-template/post-template.wxss";
+
+.headed{
+  position:fixed;
+  top: -8rpx;
+  width: 100%;
+  box-shadow: 0px 5px 8px 2px #000;
+}
+.posts{
+   margin-top: 40rpx;
+}
+.tab{
+  display: flex;
+  flex-direction: row;
+  width: 200rpx;
+  height: 50rpx;
+  background-color: #000;
+}
+.tab image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.tab text{
+  font-size: 14px;
+  line-height: 50rpx;
+}
+.heat-love{
+  position: fixed;
+  bottom: 35px;
+  right: 15px;
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 2px 8px 3px #818181;
+}
+.heat-love image{
+  width: 75rpx;
+  height: 75rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+}

@@ -1,0 +1,17 @@
+<import src="post-template/post-template.wxml" />
+
+ <view class='headed'>
+</view> 
+<view class='posts'>
+  <block wx:for="{{data_post}}" wx:for-index="idx">
+    <template is="post-litem" data="{{...data_post[idx]}}" />
+  </block>
+  <view class='heat-love' catchtap='goRelease'>
+    <image src='../images/love.png'></image>
+  </view>
+</view>
+ <view class='tab' catchtap='onTapFabulous'>
+  <image wx:if="{{data.Status}}" src='../images/zaned.png'></image>
+  <image wx:else src='../images/zan.png'></image>
+  <text>{{data.zan}}人点赞</text>
+</view>  
