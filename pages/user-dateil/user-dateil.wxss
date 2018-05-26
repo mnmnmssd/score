@@ -1,9 +1,34 @@
+page{
+  background-color: #FCE4EC;
+}
+.header{
+  width: 80%;
+  height: 50rpx;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 1px solid #D81B60;
+}
+.header text{
+  color: #FF4081;
+  font-size: 45rpx;
+}
+.user-dateil{
+  width: 80%;
+  height: 30vh;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 1px solid #D81B60;
+}
+.duser-dateil text{
+  color: #FF4081;
+  font-size: 40rpx;
+}
 .tab{
   display: flex;
   flex-direction: row;
   width: 200rpx;
   height: 50rpx;
-  background-color: #000;
+  float: right;
 }
 .tab image{
   width: 50rpx;
@@ -12,5 +37,5 @@
 .tab text{
   font-size: 14px;
   line-height: 50rpx;
-  color: #fff;
+  color: #D500F9;
 }

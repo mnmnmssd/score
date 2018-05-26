@@ -19,7 +19,10 @@ Page({
     this.setData({
       data: user_dateil[StatusId]
     })
-
+    var user = 0;
+    this.setData({
+      data_user: user
+    })
     var Statused = wx.getStorageSync("Status");
     if (Statused) {
       var Statuss = Statused[StatusId];

@@ -1,14 +1,22 @@
 <import src="post-template/post-template.wxml" />
-
 <view class='headed'>
 </view>
-<view class='posts'>
-  <block wx:for="{{data_post}}" wx:for-index="idx">
-    <view catchtap='gotouserposts' data-postId="{{data_post[idx].userpostId}}">
-      <template is="post-litem" data="{{...data_post[idx]}}" />
-    </view>
-  </block>
-  <view class='heat-love' catchtap='goRelease'>
-    <image src='../images/love.png'></image>
+<view wx:if="{{!none}}">
+  <view class='showTost'>
+    <text>这里什么都没有/(ㄒoㄒ)/~~</text>
+    <text>点击右下角按钮发布表白吧！！</text>
   </view>
+</view>
+<view wx:else>
+  <view class='posts'>
+    <block wx:for="{{data_post}}" wx:for-index="idx">
+      <view catchtap='gotouserposts' data-postId="{{data_post[idx].userpostId}}">
+        <template is="post-litem" data="{{...data_post[idx]}}" />
+      </view>
+    </block>
+  </view>
+
+</view>
+<view class='heat-love' catchtap='goRelease'>
+  <image src='../images/love.png'></image>
 </view>
