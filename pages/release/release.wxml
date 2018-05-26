@@ -1,8 +1,8 @@
 <view class='container'>
   <form bindsubmit='onformSubmit' bindreset='onformReset'>
     <input name="input" type='text' placeholder="标题" class='love-title'></input>
+    <textarea placeholder='表白内容' name="dateil" class='love-posts'></textarea>
     <button form-type='submit'>发布表白</button>
     <button formType="reset">重置表白</button>
   </form>
-  <textarea placeholder='表白内容' class='love-posts'></textarea>
 </view>

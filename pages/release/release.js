@@ -1,7 +1,11 @@
 var userpost = wx.getStorageSync("posts");
 if(!userpost){
   userpost = [{}] 
+  var Id = 0;
+}else{
+  var Id = userpost[0].userpostId
 }
+
 Page({
 
   /**
@@ -12,16 +16,23 @@ Page({
   },
   onformSubmit: function (e) {
     var input = e.detail.value.input;
+    var dateil = e.detail.value.dateil;
     var posts = {
-      input:input
+      input:input,
+      dateil:dateil,
+      userpostId:0
     }
     if(!input){
       wx.showToast({
         title: '请输入标题',
         icon:'none'
       })
-    }
-    else{
+    }else if(!dateil){
+      wx.showToast({
+        title: '请输入内容',
+        icon: 'none'
+      })
+    }else{
       // console.log('form发生了submit事件，携带数据为：', e.detail.value.input)
       //userpost[0] = posts;
       wx.showToast({
@@ -42,6 +53,9 @@ Page({
               userpost[0] = posts;
               console.log("250"+userpost[0]);
             }else{
+              Id++;
+              console
+              posts.userpostId = Id;
               userpost.unshift(posts);
               console.log("623" + userpost);
             }

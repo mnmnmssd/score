@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/user/user",
-    "pages/release/release"
+    "pages/release/release",
+    "pages/user-dateil/user-dateil"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FF4081",

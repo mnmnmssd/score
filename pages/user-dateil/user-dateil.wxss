@@ -1,0 +1,16 @@
+.tab{
+  display: flex;
+  flex-direction: row;
+  width: 200rpx;
+  height: 50rpx;
+  background-color: #000;
+}
+.tab image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.tab text{
+  font-size: 14px;
+  line-height: 50rpx;
+  color: #fff;
+}

@@ -1,8 +1,8 @@
 <template name="post-litem">
   <view class='container'>
       <text class='titles'>{{input}}</text>
-      <!-- <view class='potss'>
-        <text>表白内容asssssssssssssdddddddddddddddddddddddddddddddddddddddddddssssdasdasdasdsadsa</text>
-      </view> -->
+       <view class='potss'>
+        <text>{{dateil}}</text>
+      </view> 
   </view>
 </template>

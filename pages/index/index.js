@@ -10,22 +10,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    if (!wx.getStorageSync("Status")) {
-      var Statuss = {
-        Status: false,
-        zan: 0
-      };
-      wx.setStorage({
-        key: 'Status',
-        data: Statuss,
-      })
-    }
-    else{
-      var Statuss = wx.getStorageSync("Status");
-    }
-    this.setData({
-      data: Statuss
-    })
+
   },
 
   /**
@@ -81,27 +66,17 @@ Page({
   onShareAppMessage: function () {
   
   },
-  onTapFabulous:function(event){
-    var Statuss = wx.getStorageSync("Status");
-    if(!Statuss.Status){
-      Statuss.Status = !Statuss.Status;
-      Statuss.zan++;
-      console.log(Statuss);
-      wx.setStorageSync("Status", Statuss);
-    }
-    else{
-      Statuss.Status = !Statuss.Status;
-      Statuss.zan--;
-      console.log(Statuss);
-      wx.setStorageSync("Status", Statuss);
-    }
-    this.setData({
-      data:Statuss
-    })
-  },
+ 
   goRelease:function(event){
     wx.navigateTo({
       url: '/pages/release/release',
+    })
+  },
+  gotouserposts:function(event){
+    var postId = event.currentTarget.dataset.postid;
+    console.log(postId);
+    wx.navigateTo({
+      url: '/pages/user-dateil/user-dateil?id='+postId,
     })
   }
 })

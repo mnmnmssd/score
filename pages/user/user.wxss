@@ -2,4 +2,11 @@
 .useravatar{
   width: 80px;
   height: 80px;
+  margin:  0 auto;
+}
+.username{
+  width: 70%;
+  height: 30%;
+  margin: 50rpx auto;
+  text-align: center;
 }
